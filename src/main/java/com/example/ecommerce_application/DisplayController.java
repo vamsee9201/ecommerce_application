@@ -11,4 +11,9 @@ public class DisplayController {
         model.addAttribute("placeholder","items to be displayed");
         return "items";
     }
+
+    // Next step is to populate items and details on the database and use JPA to retrieve them
+
+
+
 }
