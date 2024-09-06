@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name="ecommerce_db")
-public class item {
+public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "product_id")
@@ -16,15 +16,15 @@ public class item {
     @Column(name = "description")
     private String description;
 
-    public item() {}
+    public Item() {}
 
-    public item(int product_id, String product_name, String description) {
+    public Item(int product_id, String product_name, String description) {
         this.product_id = product_id;
         this.product_name = product_name;
         this.description = description;
     }
 
-    public item(String product_name, String description) {
+    public Item(String product_name, String description) {
         this.product_name = product_name;
         this.description = description;
     }
