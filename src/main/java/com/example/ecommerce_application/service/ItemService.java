@@ -6,9 +6,9 @@ import java.util.List;
 public interface ItemService {
     List<Item> findAll();
 
-    Item findById();
+    Item findById(int theId);
 
     void save(Item theItem);
 
-    void deleteById(Item theItem);
+    void deleteById(int theId);
 }
