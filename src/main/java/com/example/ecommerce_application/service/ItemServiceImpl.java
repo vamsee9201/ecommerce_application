@@ -19,7 +19,7 @@ public class ItemServiceImpl implements ItemService{
 
     @Override
     public List<Item> findAll() {
-        return itemRepository.findAllByOrderByLastNameAsc();
+        return itemRepository.findAllByOrderByNameAsc();
     }
 
     @Override
